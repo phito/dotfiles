@@ -295,9 +295,10 @@ EndSection
 | jdk-8-openjdk      | Java jdk                                   |
 | maven              | Java build system                          |
 | mariadb            | SQL database system                        |
+| xf86-input-synaptics | Touchpad driver                          |
 
 ```sh
-$ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh mplayer ranger dotnet-runtime-2.0 python-pip jdk-8-openjdk maven mariadb
+$ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh mplayer ranger dotnet-runtime-2.0 python-pip jdk-8-openjdk maven mariadb xf86-input-synaptics
 ```
 
 ### AUR packages

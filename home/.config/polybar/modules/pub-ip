@@ -1,7 +1,7 @@
 #!/bin/bash
 IP=$(curl ipinfo.io/ip)
 if pgrep -x openvpn > /dev/null; then
-    echo ☭ $IP
+    echo  $IP
 else
     echo  $IP
 fi 
