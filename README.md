@@ -25,14 +25,15 @@
 - [Setup](#setup)
     - [Network](#network)
         - [Enable NetworkManager](#enable-networkmanager)
-    - [Yaourt](#yaourt)
         - [Setup WiFi](#setup-wifi)
+    - [Yaourt](#yaourt)
     - [Graphical interface](#graphical-interface)
         - [Intall XOrg, Display Manager and Window Manager](#intall-xorg-display-manager-and-window-manager)
         - [Enable lightdm](#enable-lightdm)
         - [Set i3 keymap](#set-i3-keymap)
         - [Set i3 default terminal emulator](#set-i3-default-terminal-emulator)
         - [[yoga] Set resolution at startup](#yoga-set-resolution-at-startup)
+    - [[yoga] Touchpad driver](#yoga-touchpad-driver)
     - [Dotfiles](#dotfiles)
         - [Install homesick](#install-homesick)
         - [Recover dotfiles](#recover-dotfiles)
@@ -173,6 +174,14 @@ Remove the installation media and boot on the new system
 $ systemctl start NetworkManager
 $ systemctl enable NetworkManager
 ```
+
+### Setup WiFi
+
+```sh
+$ pacman -S iw wpa_supplicant
+$ nmtui
+```
+
 ## Yaourt
 Append the following text to `/etc/pacman.conf`
 ```ini
@@ -183,13 +192,6 @@ Server = http://repo.archlinux.fr/$arch
 
 ```sh
 $ pacman -Sy yaourt
-```
-
-### Setup WiFi
-
-```sh
-$ pacman -S iw wpa_supplicant
-$ nmtui
 ```
 
 ## Graphical interface
@@ -217,7 +219,6 @@ $ localectl set-x11-keymap be
 $ localectl set-x11-keymap be
 ```
 
-
 ### [yoga] Set resolution at startup
 Create `/usr/share/lightdm.sh`
 ```sh
@@ -236,6 +237,22 @@ xrandr --output eDP-1 --mode 1920x1080_60.00
 Append the following text to `/etc/lightdm/ligthdm.conf` in the **[Seat:*]** section
 ```
 display-setup-script=/usr/share/lightdm.sh
+```
+
+## [yoga] Touchpad driver
+```sh
+$ yes | pacman -S libinput
+```
+
+Create file `/etc/x11/xorg.conf.d/30-touchpad.conf` containing
+```x11
+Section "InputClass"
+    Identifier "Synaptics TM3066-082"
+    Driver "libinput"
+    MatchIsTouchpad "on"
+    Option "Tapping" "on"
+    Option "TappingButtonMap" "lmr"
+EndSection
 ```
 
 ## Dotfiles
@@ -275,7 +292,7 @@ display-setup-script=/usr/share/lightdm.sh
 | python-pip         | Python package manager                     |
 
 ```sh
-$ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh mplayer ranger dotnet-runtime-2.0
+$ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh mplayer ranger dotnet-runtime-2.0 python-pip
 ```
 
 ### AUR packages
@@ -303,7 +320,7 @@ $ systemctl enable openvpn
 ### PIP3 packages
 | Name                    | Notes                                      |
 | ----------------------- | ------------------------------------------ |
-| requests                |                                             |
+| requests                |                                            |
 
 ```sh
 $ pip3 install requests
