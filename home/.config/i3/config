@@ -114,7 +114,7 @@ bindsym $mod+Shift+c reload
 # aesthetics #
 ##############
 # fonts
-font pango:mplus,FontAwesome 9
+font pango:mplus,FontAwesome 12
 
 # gaps
 gaps inner 10

@@ -38,7 +38,7 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Fantasque Sans Mono 10
+font = Fantasque Sans Mono 12
 scrollback_lines = 10000
 search_wrap = true
 
