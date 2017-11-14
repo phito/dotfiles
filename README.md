@@ -1,3 +1,4 @@
+# Table of Contents
 - [Pre installation](#pre-installation)
     - [Create live USB](#create-live-usb)
 - [Installation](#installation)
@@ -147,7 +148,7 @@ $ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 #### [yoga] Add Windows entry
-(Follow this article)[https://wiki.archlinux.org/index.php/GRUB#Windows_installed_in_UEFI-GPT_Mode_menu_entry]
+[Follow this article](https://wiki.archlinux.org/index.php/GRUB#Windows_installed_in_UEFI-GPT_Mode_menu_entry)
 
 ### Create user
 ```sh
