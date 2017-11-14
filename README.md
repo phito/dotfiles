@@ -253,9 +253,11 @@ display-setup-script=/usr/share/lightdm.sh
 | variety     | Wallpaper manager                          |
 | scrot       | Screenshot manager                         |
 | feh         | X11 image viewer (for wallpaper)           |
+| xclip       | cli cliboard manager                       |
+| openssh     |                       |
 
 ```sh
-$ yes | pacman -S termite compton rofi guake redshift variety scrot feh
+$ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh
 ```
 
 ### Yaourt packages
