@@ -252,9 +252,10 @@ display-setup-script=/usr/share/lightdm.sh
 | redshift    | Adjusts the computer display's color temperature based upon the time of day |
 | variety     | Wallpaper manager                          |
 | scrot       | Screenshot manager                         |
+| feh         | X11 image viewer (for wallpaper)           |
 
 ```sh
-$ yes | pacman -S termite compton rofi guake redshift variety scrot
+$ yes | pacman -S termite compton rofi guake redshift variety scrot feh
 ```
 
 ### Yaourt packages
