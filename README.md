@@ -34,6 +34,7 @@
     - [Dotfiles](#dotfiles)
         - [Install homesick](#install-homesick)
         - [Recover dotfiles](#recover-dotfiles)
+        - [Update dotfiles](#update-dotfiles)
     - [Packages](#packages)
         - [Pacman packages](#pacman-packages)
         - [Yaourt packages](#yaourt-packages)
@@ -228,7 +229,11 @@ display-setup-script=/usr/share/lightdm.sh
 ### Recover dotfiles
 ```sh
 # homesick clone phito/dotfiles
-# homesick clone link dotfiles
+# homesick link dotfiles
+```
+### Update dotfiles
+```sh
+# homesick pull dotfiles
 ```
 
 ## Packages
