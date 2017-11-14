@@ -41,7 +41,7 @@
 - [Other](#other)
     - [VS Code extensions](#vs-code-extensions)
         - [Dump extension list](#dump-extension-list)
-        - [restore extensions](#restore-extensions)
+        - [Restore extensions](#restore-extensions)
 
 # Pre installation
 ## Create live USB
@@ -281,7 +281,7 @@ $ yes | pacman -S termite compton rofi guake redshift variety scrot
 ```sh
 # code --list-extensions > vscode-extensions
 ```
-### restore extensions
+### Restore extensions
 ```sh
 # while read in; do code --install-extension $in; done <vscode-extensions
 ```
