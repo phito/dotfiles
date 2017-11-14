@@ -1,5 +1,5 @@
 #!/bin/bash
-IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
+IP=$(curl ipinfo.io/ip)
 if pgrep -x openvpn > /dev/null; then
     echo ☭ $IP
 else
