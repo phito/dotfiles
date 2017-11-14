@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="style" mtime="1509374734" type="string">
+		<stringvalue>Fantasque Sans Mono 10</stringvalue>
+	</entry>
+	<entry name="palette_name" mtime="1509971232" type="string">
+		<stringvalue>Dracula</stringvalue>
+	</entry>
+	<entry name="palette" mtime="1509971232" type="string">
+		<stringvalue>#000000000000:#FFFF55555555:#5050FAFA7B7B:#F1F1FAFA8C8C:#BDBD9393F9F9:#FFFF7979C6C6:#8B8BE9E9FDFD:#BBBBBBBBBBBB:#555555555555:#FFFF55555555:#5050FAFA7B7B:#F1F1FAFA8C8C:#BDBD9393F9F9:#FFFF7979C6C6:#8B8BE9E9FDFD:#FFFFFFFFFFFF:#F8F8F8F8F2F2:#1E1E1F1F2828</stringvalue>
+	</entry>
+	<entry name="allow_bold" mtime="1509971217" type="bool" value="true"/>
+</gconf>

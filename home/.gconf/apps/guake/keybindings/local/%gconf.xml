@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="next_tab" mtime="1509375537" type="string">
+		<stringvalue>&lt;Primary&gt;Page_Down</stringvalue>
+	</entry>
+	<entry name="previous_tab" mtime="1509375536" type="string">
+		<stringvalue>&lt;Primary&gt;Page_Up</stringvalue>
+	</entry>
+	<entry name="close_tab" mtime="1509374841" type="string">
+		<stringvalue>&lt;Primary&gt;w</stringvalue>
+	</entry>
+	<entry name="new_tab" mtime="1509374838" type="string">
+		<stringvalue>&lt;Primary&gt;t</stringvalue>
+	</entry>
+</gconf>

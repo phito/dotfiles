@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="cursor_shape" mtime="1510670743" type="int" value="1"/>
+	<entry name="cursor_blink_mode" mtime="1510670743" type="int" value="0"/>
+</gconf>
