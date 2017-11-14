@@ -19,6 +19,7 @@
         - [Set root password](#set-root-password)
         - [Install important packages](#install-important-packages)
         - [Setup GRUB](#setup-grub)
+            - [[yoga] Add Windows entry](#yoga-add-windows-entry)
         - [Create user](#create-user)
         - [Reboot](#reboot)
 - [Setup](#setup)
@@ -142,6 +143,9 @@ $ pacman -S intel-ucode networkmanager grub efibootmgr
 $ grub-install --efi-directory=/boot /dev/sda
 $ grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
+#### [yoga] Add Windows entry
+(Follow this article)[https://wiki.archlinux.org/index.php/GRUB#Windows_installed_in_UEFI-GPT_Mode_menu_entry]
 
 ### Create user
 ```sh

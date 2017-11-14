@@ -109,7 +109,7 @@ wrapping-scroll = false
 strip-wsnumbers = true
 
 ; Only show workspaces on the same output as the bar
-pin-workspaces = false
+pin-workspaces = true
 
 label-mode-padding = 2
 label-mode-foreground = #000
