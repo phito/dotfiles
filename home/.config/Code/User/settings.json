@@ -1,0 +1,24 @@
+{
+    "workbench.statusBar.visible": true,
+    "window.menuBarVisibility": "toggle",
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Dracula",
+    "window.zoomLevel": 0,
+    "git.enableSmartCommit": true,
+    "editor.fontFamily": "Fantasque Sans Mono",
+    "editor.fontSize": 14,
+    "editor.rulers": [
+        110
+    ],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 110,
+    "files.exclude": {
+        "**/bin": true,
+        "**/obj": true,
+        "**/.vscode": true,
+        "**/*.pyc": true,
+        "**/__pycache__": true,
+        "**/.settings": true
+    },
+    "extensions.ignoreRecommendations": false
+}
