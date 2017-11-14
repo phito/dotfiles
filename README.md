@@ -47,6 +47,7 @@
         - [Dump extension list](#dump-extension-list)
         - [Restore extensions](#restore-extensions)
 
+
 # Pre installation
 ## Create live USB
 ```sh
