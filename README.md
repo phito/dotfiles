@@ -254,10 +254,12 @@ display-setup-script=/usr/share/lightdm.sh
 | scrot       | Screenshot manager                         |
 | feh         | X11 image viewer (for wallpaper)           |
 | xclip       | cli cliboard manager                       |
-| openssh     |                       |
+| openssh     |                                            |
+| mplayer     | Video player, mostly for codecs            |
+| ranger      | File manager (cli)                         |
 
 ```sh
-$ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh
+$ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh mplayer ranger
 ```
 
 ### Yaourt packages
@@ -273,10 +275,12 @@ $ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip op
 | i3lock-next-git         | Screen locker                              |
 | visual-studio-code      | IDE                                        |
 | icu55                   | International Components for Unicode library (required to debug C#) |
+| neofetch                | System informations (cli)                  |
+| discord                 | Chat application                           |
 
 ```sh
-# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55
-```
+# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55 neofetch discord
+``` 
 
 # Other
 ## VS Code extensions
