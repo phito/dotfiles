@@ -243,24 +243,26 @@ display-setup-script=/usr/share/lightdm.sh
 
 ## Packages
 ### Pacman packages
-| Name        | Notes                                      |
-| ----------- | ------------------------------------------ |
-| git         | Version Control System                     |
-| termite     | Terminal emulator                          |
-| guake       | Terminal emulator (F12)                    |
-| compton     | X11 compositor                             |
-| rofi        | Application launcher                       |
-| redshift    | Adjusts the computer display's color temperature based upon the time of day |
-| variety     | Wallpaper manager                          |
-| scrot       | Screenshot manager                         |
-| feh         | X11 image viewer (for wallpaper)           |
-| xclip       | cli cliboard manager                       |
-| openssh     |                                            |
-| mplayer     | Video player, mostly for codecs            |
-| ranger      | File manager (cli)                         |
+| Name               | Notes                                      |
+| ------------------ | ------------------------------------------ |
+| git                | Version Control System                     |
+| termite            | Terminal emulator                          |
+| guake              | Terminal emulator (F12)                    |
+| compton            | X11 compositor                             |
+| rofi               | Application launcher                       |
+| redshift           | Adjusts the computer display's color temperature based upon the time of day |
+| variety            | Wallpaper manager                          |
+| scrot              | Screenshot manager                         |
+| feh                | X11 image viewer (for wallpaper)           |
+| xclip              | cli cliboard manager                       |
+| openssh            |                                            |
+| mplayer            | Video player, mostly for codecs            |
+| ranger             | File manager (cli)                         |
+| dotnet-runtime-2.0 | DotNet Core runtime                        |
+| dotnet-sdk-2.0     | DotNet Core sdk                            |
 
 ```sh
-$ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh mplayer ranger
+$ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh mplayer ranger dotnet-runtime-2.0 dotnet-sdk-2.0
 ```
 
 ### Yaourt packages
@@ -277,10 +279,9 @@ $ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip op
 | visual-studio-code      | IDE                                        |
 | icu55                   | International Components for Unicode library (required to debug C#) |
 | neofetch                | System informations (cli)                  |
-| discord                 | Chat application                           |
 
 ```sh
-# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55 neofetch discord
+# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55 neofetch
 ``` 
 
 # Other
