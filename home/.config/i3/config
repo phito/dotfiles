@@ -26,7 +26,7 @@ bindsym $mod+Shift+section    move container to workspace $ws6
 ########################
 # startup applications #
 ########################
-exec_always --no-startup-id "polybar bar &"
+exec        --no-startup-id "polybar bar &"
 exec        --no-startup-id variety
 exec        --no-startup-id "compton -b"
 exec        --no-startup-id redshift -l 50.8503:4.3517
