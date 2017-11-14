@@ -79,7 +79,7 @@ bindsym $mod+Return exec termite
 # start rofi
 bindsym $mod+space  exec rofi -show run
 # i3lock-next
-bindsym $mod+l      exec i3lock-next
+bindsym $mod+l      exec i3lock
 # take a screenshot and move it to the clipboard
 bindsym Print       exec "scrot -e 'mv $f /tmp/ && xclip -selection clipboard -t image/png -i /tmp/$f'"
 
