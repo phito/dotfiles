@@ -1,0 +1,99 @@
+#############
+# variables #
+#############
+# mod key
+set $mod Mod4
+
+###################
+# workspace setup #
+###################
+# names
+set $ws1 "1:home"
+set $ws2 "2:code"
+set $ws3 "3:bash"
+set $ws4 "4:surf"
+set $ws5 "5:social"
+set $ws6 "6:"
+
+# move focused container to workspace
+bindsym $mod+Shift+ampersand  move container to workspace $ws1
+bindsym $mod+Shift+eacute     move container to workspace $ws2
+bindsym $mod+Shift+quotedbl   move container to workspace $ws3
+bindsym $mod+Shift+apostrophe move container to workspace $ws4
+bindsym $mod+Shift+5          move container to workspace $ws5
+bindsym $mod+Shift+section    move container to workspace $ws6
+
+########################
+# startup applications #
+########################
+exec_always --no-startup-id "" $HOME/.config/polybar/launch
+exec        --no-startup-id variety
+exec        --no-startup-id "compton -b"
+exec        --no-startup-id redshift -l 50.8503:4.3517
+exec        --no-startup-id guake
+
+################
+# key bindings #
+################
+# window management
+# kill focused window
+bindsym $mod+Shift+a     kill
+# enter fullscreen mode for the focused container
+bindsym $mod+f           fullscreen toggle
+# change split orientation
+bindsym $mod+h           split h
+bindsym $mod+v           split v
+# move current workspace to screen
+bindsym $mod+Ctrl+Left   move workspace to output left
+bindsym $mod+Ctrl+Right  move workspace to output right
+# change focus
+bindsym $mod+Left        focus left
+bindsym $mod+Down        focus down
+bindsym $mod+Up          focus up
+bindsym $mod+Right       focus right
+# move focused window
+bindsym $mod+Shift+Left  move left
+bindsym $mod+Shift+Down  move down
+bindsym $mod+Shift+Up    move up
+bindsym $mod+Shift+Right move right
+# floating
+floating_modifier $mod
+# toggle tiling / floating
+bindsym $mod+Shift+BackSpace floating toggle
+# change focus between tiling / floating windows
+bindsym $mod+BackSpace focus mode_toggle
+
+# media
+bindsym XF86AudioPlay    exec playerctl play-pause
+bindsym XF86AudioNext    exec playerctl next
+bindsym XF86AudioPrev    exec playerctl previous
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec amixer -c 2 -D pulse sset Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -c 2 -D pulse sset Master 5%-
+
+# launch applications
+# start a terminal
+bindsym $mod+Return exec termite
+
+# start rofi
+bindsym $mod+space  exec rofi -show run
+# i3lock-next
+bindsym $mod+l      exec i3lock-next
+# take a screenshot and move it to the clipboard
+bindsym Print       exec "scrot -e 'mv $f /tmp/ && xclip -selection clipboard -t image/png -i /tmp/$f'"
+
+# others
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+##############
+# aesthetics #
+##############
+# fonts
+font pango:mplus,FontAwesome 9
+
+# gaps
+gaps inner 10
+gaps outer 0
+smart_gaps on
