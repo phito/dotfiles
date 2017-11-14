@@ -181,11 +181,11 @@ $ pacman -Sy yaourt
 - lightdm
 - lightdm-gtk-greeter
 - i3-gaps-next-git
-- i3lock
+- i3lock-next-git
 
 ```sh
 $ yes | pacman -S xorg lightdm lightdm-gtk-greeter
-# yes | yaourt -S i3-gaps-next-git i3lock
+# yes | yaourt -S i3-gaps-next-git i3lock-next-git
 ```
 ### Enable lightdm
 ```sh
@@ -261,8 +261,8 @@ $ yes | pacman -S termite compton rofi guake redshift variety scrot
 | ttf-mplus               | Font                                       |
 | ttf-font-awesome        | Font                                       |
 | ttf-fantasque-sans-mono | Font                                       |
-| i3lock                  | Screen locker                              |
+| i3lock-next-git         | Screen locker                              |
 
 ```sh
-# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock
+# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-next-git
 ```
