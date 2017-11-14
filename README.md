@@ -38,6 +38,10 @@
     - [Packages](#packages)
         - [Pacman packages](#pacman-packages)
         - [Yaourt packages](#yaourt-packages)
+- [Other](#other)
+    - [VS Code extensions](#vs-code-extensions)
+        - [Dump extension list](#dump-extension-list)
+        - [restore extensions](#restore-extensions)
 
 # Pre installation
 ## Create live USB
@@ -248,6 +252,7 @@ display-setup-script=/usr/share/lightdm.sh
 | redshift    | Adjusts the computer display's color temperature based upon the time of day |
 | variety     | Wallpaper manager                          |
 | scrot       | Screenshot manager                         |
+
 ```sh
 $ yes | pacman -S termite compton rofi guake redshift variety scrot
 ```
@@ -268,4 +273,15 @@ $ yes | pacman -S termite compton rofi guake redshift variety scrot
 
 ```sh
 # yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55
+```
+
+# Other
+## VS Code extensions
+### Dump extension list
+```sh
+# code --list-extensions > vscode-extensions
+```
+### restore extensions
+```sh
+# code --install-extension $(cat vscode-extensions)
 ```
