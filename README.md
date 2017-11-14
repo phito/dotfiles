@@ -263,7 +263,9 @@ $ yes | pacman -S termite compton rofi guake redshift variety scrot
 | otf-fantasque-sans-mono | Font                                       |
 | i3lock-color            | Screen locker (required for i3lock-next)   |
 | i3lock-next-git         | Screen locker                              |
+| visual-studio-code      | IDE                                        |
+| icu55                   | International Components for Unicode library (required to debug C#) |
 
 ```sh
-# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git
+# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55
 ```
