@@ -1,0 +1,19 @@
+#!/bin/sh
+
+main() {
+  if ! pgrep -x spotify >/dev/null; then
+    echo "Quiet... :)"; exit
+  fi
+
+  artist=$(playerctl metadata xesam:artist)
+  album=$(playerctl metadata xesam:album)
+  title=$(playerctl metadata xesam:title)
+
+  if [ -z "$title" ]; then
+    echo "Quiet... :)"; exit
+  fi
+
+  echo "$artist - $title"
+}
+
+main "$@"

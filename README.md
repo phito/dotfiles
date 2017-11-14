@@ -37,7 +37,7 @@
         - [Update dotfiles](#update-dotfiles)
     - [Packages](#packages)
         - [Pacman packages](#pacman-packages)
-        - [Yaourt packages](#yaourt-packages)
+        - [AUR packages](#aur-packages)
 - [Other](#other)
     - [VS Code extensions](#vs-code-extensions)
         - [Dump extension list](#dump-extension-list)
@@ -259,13 +259,12 @@ display-setup-script=/usr/share/lightdm.sh
 | mplayer            | Video player, mostly for codecs            |
 | ranger             | File manager (cli)                         |
 | dotnet-runtime-2.0 | DotNet Core runtime                        |
-| dotnet-sdk-2.0     | DotNet Core sdk                            |
 
 ```sh
-$ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh mplayer ranger dotnet-runtime-2.0 dotnet-sdk-2.0
+$ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh mplayer ranger dotnet-runtime-2.0
 ```
 
-### Yaourt packages
+### AUR packages
 | Name                    | Notes                                      |
 | ----------------------- | ------------------------------------------ |
 | google-chrome           | Web browser                                |
@@ -279,10 +278,14 @@ $ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip op
 | visual-studio-code      | IDE                                        |
 | icu55                   | International Components for Unicode library (required to debug C#) |
 | neofetch                | System informations (cli)                  |
+| dotnet-sdk-2.0          | DotNet Core sdk                            |
+| mullvad                 | VPN client                                 |
 
 ```sh
-# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55 neofetch
+# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55 neofetch dotnet-sdk-2.0 mullvad
+$ systemctl enable openvpn
 ``` 
+
 
 # Other
 ## VS Code extensions
