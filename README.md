@@ -38,6 +38,7 @@
     - [Packages](#packages)
         - [Pacman packages](#pacman-packages)
         - [AUR packages](#aur-packages)
+        - [PIP3 packages](#pip3-packages)
 - [Other](#other)
     - [VS Code extensions](#vs-code-extensions)
         - [Dump extension list](#dump-extension-list)
@@ -259,6 +260,7 @@ display-setup-script=/usr/share/lightdm.sh
 | mplayer            | Video player, mostly for codecs            |
 | ranger             | File manager (cli)                         |
 | dotnet-runtime-2.0 | DotNet Core runtime                        |
+| python-pip         | Python package manager                     |
 
 ```sh
 $ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh mplayer ranger dotnet-runtime-2.0
@@ -286,6 +288,14 @@ $ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip op
 $ systemctl enable openvpn
 ``` 
 
+### PIP3 packages
+| Name                    | Notes                                      |
+| ----------------------- | ------------------------------------------ |
+| requests                |                                             |
+
+```sh
+$ pip3 install requests
+``` 
 
 # Other
 ## VS Code extensions

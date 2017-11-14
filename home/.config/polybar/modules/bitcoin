@@ -2,7 +2,7 @@
 
 import requests
 
-r = requests.get('https://api.kraken.com/0/public/Ticker?pair=XXBTZUSD');
+r = requests.get('https://api.kraken.com/0/public/Ticker?pair=XXBTZUSD')
 ticker = r.json()
 
 print('%.2f$' % float(ticker['result']['XXBTZUSD']['c'][0]))
