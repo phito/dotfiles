@@ -25,6 +25,7 @@
     - [Network](#network)
         - [Enable NetworkManager](#enable-networkmanager)
     - [Yaourt](#yaourt)
+        - [Setup WiFi](#setup-wifi)
     - [Graphical interface](#graphical-interface)
         - [Intall XOrg, Display Manager and Window Manager](#intall-xorg-display-manager-and-window-manager)
         - [Enable lightdm](#enable-lightdm)
@@ -178,6 +179,13 @@ Server = http://repo.archlinux.fr/$arch
 
 ```sh
 $ pacman -Sy yaourt
+```
+
+### Setup WiFi
+
+```sh
+$ pacman -S iw wpa_supplicant
+$ nmtui
 ```
 
 ## Graphical interface
