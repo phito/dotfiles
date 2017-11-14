@@ -260,9 +260,10 @@ $ yes | pacman -S termite compton rofi guake redshift variety scrot
 | homesick                | Dotfile manager                            |
 | ttf-mplus               | Font                                       |
 | ttf-font-awesome        | Font                                       |
-| ttf-fantasque-sans-mono | Font                                       |
+| otf-fantasque-sans-mono | Font                                       |
+| i3lock-color            | Screen locker (required for i3lock-next)   |
 | i3lock-next-git         | Screen locker                              |
 
 ```sh
-# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-next-git
+# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git
 ```
