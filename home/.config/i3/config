@@ -3,6 +3,11 @@
 #############
 # mod key
 set $mod Mod4
+# colors
+set $purp   #5f5faf 
+set $white  #ffffff
+set $bg     #303030
+set $pink   #ff79c6
 
 ###################
 # workspace setup #
@@ -97,3 +102,14 @@ font pango:mplus,FontAwesome 9
 gaps inner 10
 gaps outer 0
 smart_gaps on
+
+# border
+hide_edge_borders smart
+for_window [class="^.*"] border pixel 3
+
+# colors
+# class                 border  backgr. text    indic.  child_border
+client.focused          $purp   $purp   $white  $purp   $purp
+client.unfocused        $bg     $bg     $white  $bg     $bg
+client.focused_inactive $bg     $bg     $white  $bg     $bg
+client.urgent           $pink   $pink   $white  $pink   k$pink
