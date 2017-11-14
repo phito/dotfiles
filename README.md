@@ -283,5 +283,5 @@ $ yes | pacman -S termite compton rofi guake redshift variety scrot
 ```
 ### restore extensions
 ```sh
-# code --install-extension $(cat vscode-extensions)
+# while read in; do code --install-extension $in; done <vscode-extensions
 ```
