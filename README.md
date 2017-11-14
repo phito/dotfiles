@@ -292,9 +292,11 @@ EndSection
 | ranger             | File manager (cli)                         |
 | dotnet-runtime-2.0 | DotNet Core runtime                        |
 | python-pip         | Python package manager                     |
+| jdk-8-openjdk      | Java jdk                                   |
+| maven              | Java build system                          |
 
 ```sh
-$ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh mplayer ranger dotnet-runtime-2.0 python-pip
+$ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh mplayer ranger dotnet-runtime-2.0 python-pip jdk-8-openjdk maven
 ```
 
 ### AUR packages
@@ -316,7 +318,6 @@ $ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip op
 
 ```sh
 # yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55 neofetch dotnet-sdk-2.0 mullvad
-$ systemctl enable openvpn
 ``` 
 
 ### PIP3 packages
