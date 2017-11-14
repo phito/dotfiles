@@ -181,10 +181,11 @@ $ pacman -Sy yaourt
 - lightdm
 - lightdm-gtk-greeter
 - i3-gaps-next-git
+- i3lock
 
 ```sh
-$ pacman -S xorg lightdm lightdm-gtk-greeter
-# yaourt -S i3-gaps-next-git
+$ yes | pacman -S xorg lightdm lightdm-gtk-greeter
+# yes | yaourt -S i3-gaps-next-git i3lock
 ```
 ### Enable lightdm
 ```sh
@@ -246,8 +247,9 @@ display-setup-script=/usr/share/lightdm.sh
 | rofi        | Application launcher                       |
 | redshift    | Adjusts the computer display's color temperature based upon the time of day |
 | variety     | Wallpaper manager                          |
+| scrot       | Screenshot manager                         |
 ```sh
-$ yes | pacman -S termite compton rofi guake redshift variety
+$ yes | pacman -S termite compton rofi guake redshift variety scrot
 ```
 
 ### Yaourt packages
@@ -259,7 +261,8 @@ $ yes | pacman -S termite compton rofi guake redshift variety
 | ttf-mplus               | Font                                       |
 | ttf-font-awesome        | Font                                       |
 | ttf-fantasque-sans-mono | Font                                       |
+| i3lock                  | Screen locker                              |
 
 ```sh
-# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome
+# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock
 ```
