@@ -8,6 +8,8 @@ set $purp   #5f5faf
 set $white  #ffffff
 set $bg     #303030
 set $pink   #ff79c6
+# screens
+set $mscreen eDP-1
 
 ###################
 # workspace setup #
@@ -19,6 +21,22 @@ set $ws3 "3:bash"
 set $ws4 "4:surf"
 set $ws5 "5:social"
 set $ws6 "6:"
+
+# screens
+workspace $ws1 output $mscreen
+workspace $ws2 output $mscreen
+workspace $ws3 output $mscreen
+workspace $ws4 output $mscreen
+workspace $ws5 output $mscreen
+
+# shortcuts
+# switch to workspace
+bindsym $mod+ampersand  workspace $ws1
+bindsym $mod+eacute     workspace $ws2
+bindsym $mod+quotedbl   workspace $ws3
+bindsym $mod+apostrophe workspace $ws4
+bindsym $mod+parenleft  workspace $ws5
+bindsym $mod+section    workspace $ws6
 
 # move focused container to workspace
 bindsym $mod+Shift+ampersand  move container to workspace $ws1
