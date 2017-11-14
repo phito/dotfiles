@@ -245,6 +245,7 @@ display-setup-script=/usr/share/lightdm.sh
 ### Pacman packages
 | Name        | Notes                                      |
 | ----------- | ------------------------------------------ |
+| git         | Version Control System                     |
 | termite     | Terminal emulator                          |
 | guake       | Terminal emulator (F12)                    |
 | compton     | X11 compositor                             |
