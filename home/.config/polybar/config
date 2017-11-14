@@ -23,7 +23,7 @@ primary = ${colors.purple}
 secondary = ${colors.cyan}
 alert =  ${colors.pink}
 
-[bar/example]
+[bar/bar]
 monitor = ${env:MONITOR:eDP-1}
 width = 100%
 height = 24 
