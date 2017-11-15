@@ -273,6 +273,7 @@ EndSection
 ### Pacman packages
 | Name               | Notes                                      |
 | ------------------ | ------------------------------------------ |
+| firefox                 | Web browser                                |
 | git                | Version Control System                     |
 | termite            | Terminal emulator                          |
 | guake              | Terminal emulator (F12)                    |
@@ -294,13 +295,12 @@ EndSection
 | xf86-input-synaptics | Touchpad driver                          |
 
 ```sh
-$ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip openssh mplayer ranger dotnet-runtime-2.0 python-pip jdk-8-openjdk maven mariadb xf86-input-synaptics
+$ yes | pacman -S firefox termite compton rofi guake redshift variety scrot feh xclip openssh mplayer ranger dotnet-runtime-2.0 python-pip jdk-8-openjdk maven mariadb xf86-input-synaptics
 ```
 
 ### AUR packages
 | Name                    | Notes                                      |
 | ----------------------- | ------------------------------------------ |
-| firefox                 | Web browser                                |
 | polybar                 | i3 status bar                              |
 | homesick                | Dotfile manager                            |
 | ttf-mplus               | Font                                       |
@@ -315,7 +315,7 @@ $ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip op
 | mullvad                 | VPN client                                 |
 
 ```sh
-# yes | yaourt -S firefox polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55 neofetch dotnet-sdk-2.0 mullvad
+# yes | yaourt -S polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55 neofetch dotnet-sdk-2.0 mullvad
 ``` 
 
 ### PIP3 packages
