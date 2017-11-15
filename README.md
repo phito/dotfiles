@@ -102,10 +102,6 @@ Now that Arch is installed, change root to the new system
 $ arch-chroot /mnt
 ```
 ### Minor tweaks
-#### Update system clock
-```sh
-$ timedatectl set-ntp true
-```
 #### Set timezone
 ```sh
 $ ln -sf /usr/share/zoneinfo/Europe/Brussels /etc/localtime
@@ -304,7 +300,7 @@ $ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip op
 ### AUR packages
 | Name                    | Notes                                      |
 | ----------------------- | ------------------------------------------ |
-| google-chrome           | Web browser                                |
+| firefox                 | Web browser                                |
 | polybar                 | i3 status bar                              |
 | homesick                | Dotfile manager                            |
 | ttf-mplus               | Font                                       |
@@ -319,7 +315,7 @@ $ yes | pacman -S termite compton rofi guake redshift variety scrot feh xclip op
 | mullvad                 | VPN client                                 |
 
 ```sh
-# yes | yaourt -S google-chrome polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55 neofetch dotnet-sdk-2.0 mullvad
+# yes | yaourt -S firefox polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55 neofetch dotnet-sdk-2.0 mullvad
 ``` 
 
 ### PIP3 packages
