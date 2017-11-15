@@ -134,7 +134,7 @@ $ passwd
 - efibootmgr
 
 ```sh
-$ pacman -S intel-ucode networkmanager grub efibootmgr
+$ pacman -S intel-ucode networkmanager grub efibootmgr zsh
 ```
 
 ### Setup GRUB
@@ -150,7 +150,7 @@ $ grub-mkconfig -o /boot/grub/grub.cfg
 ```sh
 $ useradd -m <username>
 $ passwd <username>
-$ chsh -s /bin/bash <username>
+$ chsh -s /bin/zsh <username>
 ```
 Then add the following line to `/etc/sudoers`
 ```
@@ -313,9 +313,10 @@ $ yes | pacman -S firefox termite compton rofi guake redshift variety scrot feh 
 | neofetch                | System informations (cli)                  |
 | dotnet-sdk-2.0          | DotNet Core sdk                            |
 | mullvad                 | VPN client                                 |
+| oh-my-zsh               | zsh config manager                         |
 
-```sh
-# yes | yaourt -S polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55 neofetch dotnet-sdk-2.0 mullvad
+``sh
+# yes | sudo pacaur -S polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55 neofetch dotnet-sdk-2.0 mullvad oh-my-zsh
 ``` 
 
 ### PIP3 packages
