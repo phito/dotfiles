@@ -54,6 +54,7 @@ exec        --no-startup-id variety
 exec        --no-startup-id "compton -b"
 exec        --no-startup-id redshift -l 50.8503:4.3517
 exec        --no-startup-id guake
+exec        --no-startup-id synergyc 192.168.0.1z
 
 ################
 # key bindings #
