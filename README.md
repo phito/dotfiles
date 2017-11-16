@@ -1,4 +1,4 @@
-#Table of Contents
+# Table of Contents
 - [Screenshots](#screenshots)
 - [Pre installation](#pre-installation)
     - [Create live USB](#create-live-usb)
