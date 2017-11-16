@@ -315,8 +315,8 @@ $ yes | pacman -S firefox termite compton rofi guake redshift variety scrot feh 
 | mullvad                 | VPN client                                 |
 | oh-my-zsh               | zsh config manager                         |
 
-``sh
-# yes | sudo pacaur -S polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55 neofetch dotnet-sdk-2.0 mullvad oh-my-zsh
+```sh
+# yes | pacaur -S polybar homesick ttf-mplus ttf-font-awesome ttf-fantasque-sans-mono i3lock-color i3lock-next-git visual-studio-code icu55 neofetch dotnet-sdk-2.0 mullvad oh-my-zsh
 ``` 
 
 ### PIP3 packages
