@@ -51,7 +51,7 @@ font-0 = FontAwesome:pixelsize=12;1k
 font-1 = mplus:pixelsize=12;1
 font-2 = mplus:pixelsize=12;1
 
-modules-left = i3
+modules-left = bspwm i3
 modules-center = spotify
 modules-right = pub-ip bitcoin volume memory cpu date
 
@@ -61,6 +61,24 @@ tray-padding = 2
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = %name%
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 2
+
+label-occupied = %name%
+label-occupied-padding = 2
+
+label-urgent = %name%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = %name%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 2
 
 [module/spotify]
 type = custom/script
@@ -152,12 +170,30 @@ label = %date% %time%
 
 padding-right = 2
 
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+
+format = <ramp> <label>
+format-underline = ${colors.select}
+format-warn = <ramp> <label-warn>
+format-warn-underline = ${self.format-underline}
+
+label = %temperature%
+label-warn = %temperature%
+label-warn-foreground = ${colors.secondary}
+
+ramp-foreground = ${colors.foreground-alt}
+
 [global/wm]
 margin-top = 0
 margin-bottom = 
 
 [module/volume]
 type = internal/volume
+
+format-volume = <ramp-volume> <label-volume>
 
 ; Soundcard to be used
 ; Usually in the format hw:#
