@@ -193,8 +193,6 @@ margin-bottom =
 [module/volume]
 type = internal/volume
 
-format-volume = <ramp-volume> <label-volume>
-
 ; Soundcard to be used
 ; Usually in the format hw:#
 master-soundcard = default
@@ -222,6 +220,8 @@ headphone-id = 9
 ; Use volume mapping (similar to amixer -M and alsamixer), where the increase in volume is linear to the ear
 ; Default: false
 mapped = true
+
+format-volume = <bar-volume>
 
 ; Available tokens:
 ;   %percentage% (default)
