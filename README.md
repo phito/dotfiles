@@ -137,15 +137,16 @@ $ mount  /dev/sda2 /mnt
 $ mkdir  /mnt/boot
 $ mount  /dev/sda1 /mnt/boot !only for UEFI
 ```
-#### Generate /etc/fstab
-Automatically mounts filesystems at boot
-```sh
-$ genfstab -U /mnt >> /mnt/etc/fstab
-```
 
 ### Install Arch on disk
 ```sh
 $ pacstrap /mnt base base-devel
+```
+
+### Generate /etc/fstab
+Automatically mounts filesystems at boot
+```sh
+$ genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
 ## System setup
@@ -181,9 +182,9 @@ $ passwd
 
 ### Install important packages
 - intel-ucode
-- networkmanager
 - grub
 - efibootmgr
+- zsh
 
 ```sh
 $ pacman -S intel-ucode networkmanager grub efibootmgr zsh
@@ -195,7 +196,7 @@ $ grub-install --efi-directory=/boot /dev/sda
 $ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-#### [yoga] Add Windows entry
+#### Add Windows entry
 [Follow this article](https://wiki.archlinux.org/index.php/GRUB#Windows_installed_in_UEFI-GPT_Mode_menu_entry)
 
 ### Create user
@@ -218,31 +219,17 @@ $ reboot
 Remove the installation media and boot on the new system
 
 # Setup
-## Network
-### Enable NetworkManager
+## Network (netctl)
+### Create configuration file
 ```sh
-$ systemctl start NetworkManager
-$ systemctl enable NetworkManager
+# nano /etc/netctl/ethernet-static
+Interface=eno1
+IP=static
+Address=('ip/24')
+Gateway=('192.168.0.1')
+DNS=('8.8.8.8' '8.8.4.4')
 ```
 
-### Setup WiFi
-
-```sh
-$ pacman -S iw wpa_supplicant
-$ nmtui
-```
-
-## Yaourt
-Append the following text to `/etc/pacman.conf`
-```ini
-[archlinuxfr]
-SigLevel = Never
-Server = http://repo.archlinux.fr/$arch
-```
-
-```sh
-$ pacman -Sy yaourt
-```
 
 ## Graphical interface
 ### Intall XOrg, Display Manager and Window Manager
